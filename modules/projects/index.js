@@ -1,5 +1,5 @@
-const express = require('express')
-const router = express.Router()
+const { Router } = require('express')
+const router = Router()
 
 // data
 const dataProjects = require('../../data/projects')
@@ -27,7 +27,7 @@ router.put('/:id', isValidproject(dataProjects), (req, res) => {
   res.send({"log": "project updated"})
 })
 
-router.post('/:id', existsProject(dataProjects), (req, res) => {
+router.post('/', existsProject(dataProjects), (req, res) => {
   const {
     id,
     title,
