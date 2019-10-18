@@ -1,4 +1,6 @@
-module.exports = (data = []) => (req, res, next) => {
+import data from '../data/apiLog'
+
+export default (req, res, next) => {
   const { method } = req
     
   const newLog = {

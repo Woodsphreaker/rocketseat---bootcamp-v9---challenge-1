@@ -1,15 +1,17 @@
 {
   "name": "challenge-1",
   "version": "1.0.0",
+  "author": "Carlo Enrico",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/app.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.3"
+    "nodemon": "^1.19.3",
+    "sucrase": "^3.10.1"
   }
 }

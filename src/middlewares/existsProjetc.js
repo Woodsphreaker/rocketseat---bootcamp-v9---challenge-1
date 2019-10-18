@@ -1,4 +1,6 @@
-module.exports = (data = []) => (req, res, next) => {
+import data from '../data/projects'
+
+export default (req, res, next) => {
   const { id } = req.body
   const project = data.find(el => el.id === id)
 
